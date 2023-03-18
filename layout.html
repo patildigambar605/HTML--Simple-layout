@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+   <style>
+     * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      
+      
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; 
+        background: #ccc;
+        padding: 20px;
+      }
+      
+      
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px;
+      }
+      
+     
+      section::after {
+        content: "";
+        display: table;
+        
+      }
+      
+    
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      
+
+      @media (max-width: 600px) {
+        nav, article {
+          width: 100%;
+          height: auto;
+        }
+      }
+   
+   </style>   
+</head>
+<body>
+    <header>continent</header>
+    <section>
+    <nav>
+        <ul>
+            <li><a href="">Asia</a></li>
+            <li><a href="">Africa</a></li>
+            <li><a href="">North America</a></li>
+            <li><a href="">South America</a></li>
+            <li><a href="">Antarctica</a></li>
+            <li><a href="">Europe</a></li>
+            <li><a href="">Australia</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Asia</h1>
+        <p>Asia is the World’s largest continent – 43,810,582 km². covering approximately 30% of the Earth’s land and 8.66% of the Earth’s surface. It is bordered by the Ural Mountains to the east, the Arctic Ocean to the north, the Pacific Ocean to the west and the Indian Ocean to the south.</p>
+      </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+      </footer>
+      
+
+</body>
+</html>
